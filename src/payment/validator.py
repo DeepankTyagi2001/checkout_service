@@ -30,10 +30,19 @@ def validate_payment(payment_data: dict) -> bool:
     # NOTE: this length check was added in a recent refactor and is the
     # suspected root cause of the current incident. Legacy/test tokens
     # shorter than 10 characters are being rejected.
-    if not card_token or len(card_token) < 10:
-        raise ValueError("Missing or malformed card_token")
 
+
+    # if not card_token or len(card_token) < 10:
+    #     raise ValueError("Missing or malformed card_token")
+
+    # if payment_data.get("amount", 0) <= 0:
+    #     raise ValueError("Invalid amount")
+
+    # return True
+
+    card_token = payment_data.get("card_token")
+    if not card_token or len(card_token) < 10:   # <-- new stricter check
+        raise ValueError("Missing or malformed card_token")
     if payment_data.get("amount", 0) <= 0:
         raise ValueError("Invalid amount")
-
     return True
