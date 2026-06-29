@@ -30,5 +30,5 @@ python src/main.py
 
 ## Related docs
 
-See `docs/postmortems/` for past incident history and `docs/runbook_checkout_5xx_errors.md`
+See `docs/postmortems/` for past incident history, and `docs/runbook_checkout_5xx_errors.md`
 for on-call troubleshooting steps.
