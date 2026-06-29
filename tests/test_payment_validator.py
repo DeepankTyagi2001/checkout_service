@@ -3,7 +3,7 @@ Unit tests for payment validation logic.
 
 NOTE: test_validate_payment_legacy_short_token is expected to FAIL on the
 current main branch due to the card_token length regression described in
-docs/postmortems/postmortem_2025-03-14_payment_validation_500s.md. It is
+docs/postmortems/postmortem_2025-03-14_payment_validation_500s.md. it is
 included here intentionally to demonstrate the gap in the original test
 suite (the staging tests used tokens >10 chars and never caught this).
 """
