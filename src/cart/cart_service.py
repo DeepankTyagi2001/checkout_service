@@ -29,7 +29,7 @@ def get_cart(cart_id: str) -> dict:
     if cart_id in _cart_cache:
         return _cart_cache[cart_id]
 
-    # In a real implementation this would query a cart database/service.
+    # In a real implementation this would query a cart database/service
     cart = _fetch_cart_from_store(cart_id)
     _cart_cache[cart_id] = cart
     return cart
