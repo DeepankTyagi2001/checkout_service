@@ -13,7 +13,7 @@ import requests
 GATEWAY_BASE_URL = "https://payments.example-gateway.com/v1"
 
 # Explicit timeout (seconds) — see postmortem 2024-11-02 for why this
-# must never be left to the library default.
+# must never be left to the library default
 DEFAULT_TIMEOUT = 30
 
 
