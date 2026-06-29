@@ -1,7 +1,7 @@
 """
 Entrypoint for checkout-service.
 
-Exposes the checkout API: validating payment, finalizing the cart, and
+Exposes the checkout API: Validating payment, finalizing the cart, and
 charging via the payment gateway.
 """
 
